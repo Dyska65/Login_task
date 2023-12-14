@@ -15,13 +15,13 @@ class ContactViewModel {
     required String message,
   }) async {
     setStatusButton(StatusButton.waiting);
-    String? sendRequest = await ApiManager().sendContact(
+    String sendRequest = await ApiManager().sendContact(
       name: name,
       email: email,
       message: message,
     );
     setStatusButton(StatusButton.active);
-    return sendRequest ?? "Success send request";
+    return sendRequest;
   }
 }
 

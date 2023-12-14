@@ -27,7 +27,6 @@ class _InputField extends State<InputField> {
   static const Color _colorIcon = Color(0xffe6bf90);
   static const Color _colorInputText = Color(0xff737B7D);
   static const Color _colorBorderSide = Color(0xff737B7D);
-
   static const double _paddingIcon = 8;
 
   @override
